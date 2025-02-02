@@ -1,0 +1,53 @@
+!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Seite | Harun Degirmenci</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Begrüßungsseite -->
+    <div id="welcome-screen">
+        <h1>Willkommen auf der privaten Seite von Harun Degirmenci</h1>
+        <button onclick="showLogin()">Weiter</button>
+    </div>
+
+    <!-- Passwortschutz -->
+    <div id="login-screen" class="hidden">
+        <h2>Gib das Passwort ein:</h2>
+        <input type="password" id="password" placeholder="Passwort eingeben">
+        <button onclick="checkPassword()">Login</button>
+        <p id="error-message" class="hidden">Falsches Passwort!</p>
+    </div>
+
+    <!-- Hauptseite -->
+    <div id="main-content" class="hidden">
+        <header>
+            <h1>Harun Degirmenci</h1>
+        </header>
+        
+        <section class="content">
+            <h2>Über mich</h2>
+            <p>Hier kommt dein Text über dich hin...</p>
+        </section>
+
+        <section class="content">
+            <h2>Social Media</h2>
+            <a href="https://www.instagram.com/harundgr_" target="_blank">Instagram</a>
+            <a href="https://www.tiktok.com/@hrrnn8" target="_blank">TikTok</a>
+        </section>
+
+        <section class="content">
+            <h2>Kontakt</h2>
+            <p>Email: harundegi1616@gmail.com</p>
+            <p>Telefon: 0157 37510595</p>
+        </section>
+    </div>
+
+    <audio id="intro-sound" src="sound.mp3"></audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
